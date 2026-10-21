@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#1239e8" />
+    <title>Say Hello — Sundrops®</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    ></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+    ></script>
+    <script defer src="assets/js/main.js"></script>
+  </head>
+  <body>
+    <div class="noise"></div>
+    <header class="site-header">
+      <a class="wordmark" href="index.html"
+        >sun<span>drops</span><sup>®</sup><i></i
+      ></a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a
+        ><a href="shop.html">The shop <span>↗</span></a
+        ><a href="blog.html">Field notes</a
+        ><a class="active" href="contact.html">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a class="signin-link" href="auth.html">Sign in <span>↗</span></a
+        ><a class="cart-link" href="shop.html"
+          >Bag <b class="cart-count">0</b></a
+        ><button class="menu-toggle" aria-label="Open menu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </header>
+    <main class="inner-page contact-page">
+      <section class="inner-hero section-pad">
+        <div class="section-kicker">
+          <span>THE SUNDROPS HELP DESK / 03</span
+          ><span>REAL PEOPLE. GOOD ANSWERS.</span>
+        </div>
+        <h1 class="inner-title">TALK TO<br /><em>OUR PEOPLE.</em></h1>
+        <div class="inner-hero-bottom">
+          <p>
+            Questions, ideas, diner sightings, or just a hello. We're here for
+            all of it.
+          </p>
+          <span>LET'S MAKE CONTACT ↓</span>
+        </div>
+        <div class="contact-asterisk">✳</div>
+      </section>
+      <section class="contact-layout section-pad">
+        <div class="contact-info">
+          <span class="eyebrow">HOW CAN WE HELP?</span>
+          <h2>WE'RE ALL<br /><em>EARS.</em></h2>
+          <p>
+            We want every part of your Sundrops experience to feel thoughtful.
+            Tell us what’s on your mind and our team will get back to you.
+          </p>
+          <div class="contact-detail">
+            <span>01 / CUSTOMER CARE</span
+            ><a href="mailto:hello@sundrops.example">hello@sundrops.example ↗</a
+            ><small
+              >Replace this demo address with your real support inbox.</small
+            >
+          </div>
+          <div class="contact-detail">
+            <span>02 / SOCIAL HELLO</span
+            ><a
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noreferrer"
+              >@sundrops ↗</a
+            ><small>Follow along or send us a message.</small>
+          </div>
+          <div class="contact-hours">
+            <span class="status-dot"></span>
+            <p>
+              <b>Our imaginary inbox is open.</b
+              ><small
+                >Demo site · response times aren't connected to a real
+                team.</small
+              >
+            </p>
+          </div>
+        </div>
+        <form class="contact-form" id="contact-form">
+          <div class="form-topline">
+            <span>DROP US A NOTE</span><span>FORM / 001</span>
+          </div>
+          <label for="contact-name">Your name <b>*</b></label
+          ><input
+            id="contact-name"
+            name="name"
+            placeholder="What should we call you?"
+            required
+          /><label for="contact-email">Email address <b>*</b></label
+          ><input
+            id="contact-email"
+            name="email"
+            type="email"
+            placeholder="you@example.com"
+            required
+          /><label for="contact-topic">What's this about? <b>*</b></label
+          ><select id="contact-topic" name="topic" required>
+            <option value="" disabled selected>Pick a topic</option>
+            <option>Product question</option>
+            <option>Ingredients & allergens</option>
+            <option>Order or delivery</option>
+            <option>Diner / stockist enquiry</option>
+            <option>Partnership or press</option>
+            <option>Just saying hi</option></select
+          ><label for="contact-message">Your message <b>*</b></label
+          ><textarea
+            id="contact-message"
+            name="message"
+            rows="5"
+            placeholder="Tell us the good stuff..."
+            required
+          ></textarea
+          ><button class="button button-dark form-submit" type="submit">
+            Send your note <span>↗</span>
+          </button>
+          <p class="form-legal">
+            This demo form shows a local confirmation only. Connect a backend or
+            form service before launch.
+          </p>
+          <span class="form-message" aria-live="polite"></span>
+        </form>
+      </section>
+      <section class="faq-section section-pad">
+        <div>
+          <span class="eyebrow">THE QUICK ANSWERS</span>
+          <h2>GOOD TO<br /><em>KNOW.</em></h2>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>Where can I find Sundrops? <span>+</span></summary>
+            <p>
+              Our products are designed to be served in your favourite diners.
+              Add real stockist locations here as the brand grows.
+            </p>
+          </details>
+          <details>
+            <summary>
+              Where can I find ingredient and allergen information?
+              <span>+</span>
+            </summary>
+            <p>
+              Product ingredients and allergen details should be listed clearly
+              on each product page and packaging. Contact us if you need help
+              with a specific product.
+            </p>
+          </details>
+          <details>
+            <summary>Can I work with Sundrops? <span>+</span></summary>
+            <p>
+              We love hearing from diners, stockists, makers, and good people
+              with good ideas. Choose “Partnership or press” in the form above
+              and tell us about it.
+            </p>
+          </details>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-top">
+        <a class="wordmark footer-wordmark" href="index.html"
+          >sun<span>drops</span><sup>®</sup><i></i
+        ></a>
+        <p>Good things, in a bite.<br />Made for your own kind of day.</p>
+        <a
+          class="back-top"
+          href="#top"
+          onclick="
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            return false;
+          "
+          >BACK TO THE TOP ↑</a
+        >
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 SUNDROPS® — HERE TO HELP.</span>
+        <div>
+          <a href="shop.html">The shop</a><a href="blog.html">Field notes</a
+          ><a href="https://www.instagram.com/" target="_blank" rel="noreferrer"
+            >Instagram ↗</a
+          ><a href="auth.html">Your account ↗</a>
+        </div>
+        <span>GOOD ENERGY ONLY.</span>
+      </div>
+    </footer>
+    <div class="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>

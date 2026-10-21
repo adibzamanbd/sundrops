@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#1239e8" />
+    <title>Field Notes — Sundrops®</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    ></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+    ></script>
+    <script defer src="assets/js/main.js"></script>
+  </head>
+  <body>
+    <div class="noise"></div>
+    <header class="site-header">
+      <a class="wordmark" href="index.html"
+        >sun<span>drops</span><sup>®</sup><i></i
+      ></a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a
+        ><a href="shop.html">The shop <span>↗</span></a
+        ><a class="active" href="blog.html">Field notes</a
+        ><a href="contact.html">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a class="signin-link" href="auth.html">Sign in <span>↗</span></a
+        ><a class="cart-link" href="shop.html"
+          >Bag <b class="cart-count">0</b></a
+        ><button class="menu-toggle" aria-label="Open menu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </header>
+    <main class="inner-page blog-page">
+      <section class="inner-hero section-pad">
+        <div class="section-kicker">
+          <span>THE SUNDROPS JOURNAL / 02</span
+          ><span>IDEAS, INGREDIENTS & IN-BETWEENS</span>
+        </div>
+        <h1 class="inner-title">FIELD<br /><em>NOTES.</em></h1>
+        <div class="inner-hero-bottom">
+          <p>
+            A collection of tiny rituals, good-food thoughts, and reminders to
+            make a little room for yourself.
+          </p>
+          <span>READ SOMETHING GOOD ↓</span>
+        </div>
+        <div class="blog-hero-sun">✳</div>
+      </section>
+      <section class="blog-list section-pad">
+        <div class="blog-featured" id="solo-lunch">
+          <div class="blog-feature-art blog-art-a">
+            <span>FIELD NOTE / 001</span>
+            <div class="blog-art-words">
+              LUNCH IS<br />A LOVE<br />LANGUAGE.
+            </div>
+            <div class="blog-art-disc">TAKE<br />YOUR<br />TIME ↗</div>
+          </div>
+          <div class="blog-feature-copy">
+            <span class="eyebrow">THE SOLO LIFE · 4 MIN READ</span>
+            <h2>The art of making lunch feel like a plan</h2>
+            <p>
+              Eating on your own doesn’t have to mean eating on autopilot. A
+              plate, a pause, and one thing you really like can turn the middle
+              of a busy day into a moment that belongs to you.
+            </p>
+            <a class="underlined-link" href="#read-solo-lunch"
+              >Read the note <span>↗</span></a
+            >
+          </div>
+        </div>
+        <article class="blog-row" id="snack-ritual">
+          <div class="blog-row-art blog-art-b">
+            <span>02</span><b>PAUSE.<br />SNACK.<br />RESET.</b><i>✳</i>
+          </div>
+          <div class="blog-row-copy">
+            <div class="blog-row-meta">
+              <span>SMALL RITUALS</span><span>3 MIN READ</span>
+            </div>
+            <h2>A tiny reset for your very full day</h2>
+            <p>
+              Not every break needs a grand plan. Sometimes it’s just putting
+              the tabs away, getting a glass of water, and giving yourself five
+              unclaimed minutes.
+            </p>
+            <a class="underlined-link" href="#read-snack-ritual"
+              >Read the note <span>↗</span></a
+            >
+          </div>
+          <span class="blog-row-index">001 / 003</span>
+        </article>
+        <article class="blog-row" id="ingredient-story">
+          <div class="blog-row-art blog-art-c">
+            <span>03</span><b>GOOD<br />STARTS<br />HERE.</b>
+            <div></div>
+          </div>
+          <div class="blog-row-copy">
+            <div class="blog-row-meta">
+              <span>BEHIND THE BITE</span><span>5 MIN READ</span>
+            </div>
+            <h2>Why the little ingredient details matter</h2>
+            <p>
+              Care isn’t always loud. It lives in the choices you make before
+              anyone takes a bite: the ingredients, the balance, and the thought
+              that goes into getting it right.
+            </p>
+            <a class="underlined-link" href="#read-ingredient-story"
+              >Read the note <span>↗</span></a
+            >
+          </div>
+          <span class="blog-row-index">002 / 003</span>
+        </article>
+        <div class="article-reader" id="read-solo-lunch">
+          <button
+            class="reader-close"
+            aria-label="Close article"
+            onclick="this.parentElement.classList.remove('open')"
+          >
+            CLOSE ×</button
+          ><span class="eyebrow">THE SOLO LIFE / A SUNDROPS FIELD NOTE</span>
+          <h2>The art of making lunch feel like a plan</h2>
+          <p class="large-copy">
+            You don't need a table full of people to make a meal feel special.
+          </p>
+          <p>
+            There is something quietly powerful about making a moment just for
+            yourself. Not a rushed bite over the sink, not a lunch you barely
+            notice between meetings. A real pause. Your favourite plate if you
+            have one. A window open. Something crunchy. Something bright.
+          </p>
+          <p>
+            Start small: choose one thing you genuinely want to eat, put it on a
+            plate, and let the next ten minutes be yours. You don't have to earn
+            it by finishing your to-do list first.
+          </p>
+          <p>
+            That's the kind of everyday joy we believe in at Sundrops. Not
+            perfect routines or complicated rituals. Just small, thoughtful
+            things that make an ordinary day feel a little more like your own.
+          </p>
+          <a class="button button-dark" href="shop.html"
+            >Find your bite <span>↗</span></a
+          >
+        </div>
+        <div class="article-reader" id="read-snack-ritual">
+          <button
+            class="reader-close"
+            aria-label="Close article"
+            onclick="this.parentElement.classList.remove('open')"
+          >
+            CLOSE ×</button
+          ><span class="eyebrow">SMALL RITUALS / A SUNDROPS FIELD NOTE</span>
+          <h2>A tiny reset for your very full day</h2>
+          <p class="large-copy">A pause is productive in its own way.</p>
+          <p>
+            When the day feels like one long scroll, step away for a few
+            minutes. Get a drink, stretch your shoulders, and let your attention
+            land on something simple. A snack can be a small anchor: a flavour,
+            a texture, a reason to slow down.
+          </p>
+          <p>
+            There is no perfect way to reset. The point is not to optimise every
+            minute. The point is to notice that you are in it.
+          </p>
+        </div>
+        <div class="article-reader" id="read-ingredient-story">
+          <button
+            class="reader-close"
+            aria-label="Close article"
+            onclick="this.parentElement.classList.remove('open')"
+          >
+            CLOSE ×</button
+          ><span class="eyebrow">BEHIND THE BITE / A SUNDROPS FIELD NOTE</span>
+          <h2>Why the little ingredient details matter</h2>
+          <p class="large-copy">Thoughtfulness is a thousand tiny decisions.</p>
+          <p>
+            Good food starts long before the first bite. It starts with asking
+            why an ingredient belongs, how flavours work together, and what
+            makes a snack feel satisfying rather than simply filling a gap.
+          </p>
+          <p>
+            At Sundrops, this is the standard we want to hold ourselves to. As
+            our range grows, we will share more about sourcing, ingredients,
+            allergens, and how each product is made—clearly, honestly, and
+            without the marketing fog.
+          </p>
+        </div>
+      </section>
+      <section class="blog-cta section-pad">
+        <span class="eyebrow">THAT'S ENOUGH THINKING. TIME FOR A BITE.</span>
+        <h2>LET'S GET YOU<br /><em>SNACKING.</em></h2>
+        <a class="button button-light" href="shop.html"
+          >Explore the shop <span>↗</span></a
+        >
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-top">
+        <a class="wordmark footer-wordmark" href="index.html"
+          >sun<span>drops</span><sup>®</sup><i></i
+        ></a>
+        <p>Good things, in a bite.<br />Made for your own kind of day.</p>
+        <a
+          class="back-top"
+          href="#top"
+          onclick="
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            return false;
+          "
+          >BACK TO THE TOP ↑</a
+        >
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 SUNDROPS® — CONCEPT JOURNAL.</span>
+        <div>
+          <a href="contact.html">Contact</a><a href="shop.html">The shop</a
+          ><a href="https://www.instagram.com/" target="_blank" rel="noreferrer"
+            >Instagram ↗</a
+          ><a href="auth.html">Your account ↗</a>
+        </div>
+        <span>GOOD ENERGY ONLY.</span>
+      </div>
+    </footer>
+    <div class="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>

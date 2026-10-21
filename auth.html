@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#1239e8" />
+    <title>Your Account — Sundrops®</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script defer src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js"
+    ></script>
+    <script defer src="assets/js/main.js"></script>
+  </head>
+  <body class="auth-body">
+    <div class="noise"></div>
+    <a class="auth-back" href="index.html">← BACK TO SUNDROPS</a>
+    <main class="auth-layout">
+      <section class="auth-art">
+        <a class="wordmark auth-wordmark" href="index.html"
+          >sun<span>drops</span><sup>®</sup><i></i
+        ></a>
+        <div class="auth-art-content">
+          <span class="eyebrow">GOOD TO SEE YOU AGAIN</span>
+          <h1>YOUR LITTLE<br /><em>GOOD THING.</em></h1>
+          <p>
+            Sign in to keep your favourites close and your good-food moments in
+            one place.
+          </p>
+        </div>
+        <div class="auth-orb"><span>✳</span></div>
+        <span class="auth-art-foot">SUNDROPS® / THE GOOD FOOD CLUB</span>
+      </section>
+      <section class="auth-panel">
+        <div class="auth-panel-top">
+          <span class="eyebrow">THE GOOD FOOD CLUB</span
+          ><span class="auth-secure">✳ YOUR SPACE</span>
+        </div>
+        <div class="auth-tabs">
+          <button class="auth-tab active" data-auth-tab="login">Sign in</button
+          ><button class="auth-tab" data-auth-tab="signup">
+            Create account
+          </button>
+        </div>
+        <form id="login-form" class="auth-form">
+          <h2>Welcome <em>back.</em></h2>
+          <p>Your next good bite is just around the corner.</p>
+          <label for="login-email">Email address</label
+          ><input
+            id="login-email"
+            type="email"
+            placeholder="you@example.com"
+            autocomplete="email"
+            required
+          /><label for="login-password">Password</label
+          ><input
+            id="login-password"
+            type="password"
+            placeholder="At least 8 characters"
+            autocomplete="current-password"
+            minlength="8"
+            required
+          /><button class="button button-dark auth-submit" type="submit">
+            Sign in <span>↗</span></button
+          ><span class="form-message" aria-live="polite"></span>
+          <p class="auth-note">
+            Demo authentication only. This prototype stores a basic account
+            record in your browser; don't use a real password. Production login
+            needs a secure backend and proper password hashing.
+          </p>
+        </form>
+        <form id="signup-form" class="auth-form hidden">
+          <h2>Come on <em>in.</em></h2>
+          <p>Create your spot in the Good Food Club.</p>
+          <label for="signup-name">Your name</label
+          ><input
+            id="signup-name"
+            type="text"
+            placeholder="First name is fine"
+            autocomplete="name"
+            required
+          /><label for="signup-email">Email address</label
+          ><input
+            id="signup-email"
+            type="email"
+            placeholder="you@example.com"
+            autocomplete="email"
+            required
+          /><label for="signup-password">Create a password</label
+          ><input
+            id="signup-password"
+            type="password"
+            placeholder="At least 8 characters"
+            autocomplete="new-password"
+            minlength="8"
+            required
+          /><button class="button button-dark auth-submit" type="submit">
+            Create my account <span>↗</span></button
+          ><span class="form-message" aria-live="polite"></span>
+          <p class="auth-note">
+            Prototype only: account data is saved in local browser storage and
+            is not secure or synced across devices.
+          </p>
+        </form>
+        <div class="auth-bottom">
+          <a href="contact.html">Need a hand? Talk to us ↗</a
+          ><span>GOOD THINGS, IN A BITE.</span>
+        </div>
+      </section>
+    </main>
+    <div class="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>

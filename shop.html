@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#1239e8" />
+    <title>The Shop — Sundrops®</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r152/three.min.js"
+    ></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+    ></script>
+    <script defer src="assets/js/main.js"></script>
+  </head>
+  <body>
+    <div class="noise"></div>
+    <header class="site-header">
+      <a class="wordmark" href="index.html"
+        >sun<span>drops</span><sup>®</sup><i></i
+      ></a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a
+        ><a class="active" href="shop.html">The shop <span>↗</span></a
+        ><a href="blog.html">Field notes</a><a href="contact.html">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a class="signin-link" href="auth.html">Sign in <span>↗</span></a
+        ><a class="cart-link" href="shop.html"
+          >Bag <b class="cart-count">0</b></a
+        ><button class="menu-toggle" aria-label="Open menu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </header>
+    <main class="inner-page shop-page">
+      <section class="inner-hero section-pad">
+        <div class="section-kicker">
+          <span>THE SUNDROPS SHOP / 01</span
+          ><span>GOOD THINGS, RIGHT THIS WAY</span>
+        </div>
+        <h1 class="inner-title">YOUR NEXT<br /><em>HAPPY BITE.</em></h1>
+        <div class="inner-hero-bottom">
+          <p>
+            Thoughtfully made finger food for solo dinners, desk lunches, and
+            every little moment in between.
+          </p>
+          <span>SCROLL TO SHOP ↓</span>
+        </div>
+        <div class="shop-hero-stamp">GOOD<br />FOOD<br />CLUB <b>✳</b></div>
+      </section>
+      <section class="shop-products section-pad">
+        <div class="shop-filter-row">
+          <span>THE LINE-UP <b>(03)</b></span>
+          <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">
+              All good things</button
+            ><button class="filter-btn" data-filter="crunchy">Crunchy</button
+            ><button class="filter-btn" data-filter="mix">Mixes</button>
+          </div>
+        </div>
+        <div class="shop-grid">
+          <article class="shop-product" id="sun-bites" data-category="crunchy">
+            <div class="shop-product-visual shop-visual-a">
+              <span class="shop-code">SD—001 / THE ORIGINAL</span>
+              <div class="shop-food food-sun"><i></i><i></i><i></i><i></i></div>
+              <span class="shop-product-sticker">THE<br />CLASSIC ✳</span>
+            </div>
+            <div class="shop-product-info">
+              <div>
+                <h2>Sun Bites</h2>
+                <p>Crunchy little mood-lifters. The everyday classic.</p>
+                <span class="product-tags">CRUNCHY · EVERYDAY</span>
+              </div>
+              <div class="shop-price">
+                $8.00
+                <button
+                  class="add-cart"
+                  data-product="Sun Bites"
+                  data-price="8"
+                >
+                  ADD +
+                </button>
+              </div>
+            </div>
+          </article>
+          <article
+            class="shop-product"
+            id="crunch-club"
+            data-category="crunchy"
+          >
+            <div class="shop-product-visual shop-visual-b">
+              <span class="shop-code">SD—002 / TEXTURE CLUB</span>
+              <div class="shop-food food-stack">
+                <i></i><i></i><i></i><i></i><i></i>
+              </div>
+              <span class="shop-product-sticker"
+                >HEAR THAT?<br />THAT'S JOY.</span
+              >
+            </div>
+            <div class="shop-product-info">
+              <div>
+                <h2>Crunch Club</h2>
+                <p>For the ones who believe texture is everything.</p>
+                <span class="product-tags">EXTRA CRUNCH · BOLD</span>
+              </div>
+              <div class="shop-price">
+                $9.00
+                <button
+                  class="add-cart"
+                  data-product="Crunch Club"
+                  data-price="9"
+                >
+                  ADD +
+                </button>
+              </div>
+            </div>
+          </article>
+          <article class="shop-product" id="little-mix" data-category="mix">
+            <div class="shop-product-visual shop-visual-c">
+              <span class="shop-code">SD—003 / THE MEET-CUTE</span>
+              <div class="shop-food food-mix">
+                <i></i><i></i><i></i><i></i><i></i><i></i>
+              </div>
+              <span class="shop-product-sticker">CAN'T PICK?<br />DON'T.</span>
+            </div>
+            <div class="shop-product-info">
+              <div>
+                <h2>The Little Mix</h2>
+                <p>A bit of everything for your indecisive era.</p>
+                <span class="product-tags">MIX & MATCH · SHAREABLE</span>
+              </div>
+              <div class="shop-price">
+                $12.00
+                <button
+                  class="add-cart"
+                  data-product="The Little Mix"
+                  data-price="12"
+                >
+                  ADD +
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="shop-note">
+          <span>✳</span>
+          <p>
+            <b>Heads up, good human.</b> These are concept products and sample
+            prices for the website demo. Update product details, ingredients,
+            allergens, stock, and checkout before taking real orders.
+          </p>
+        </div>
+      </section>
+      <section class="shop-help section-pad">
+        <div>
+          <span class="eyebrow">NEED A HAND?</span>
+          <h2>GOOD QUESTIONS<br />DESERVE <em>GOOD ANSWERS.</em></h2>
+        </div>
+        <div>
+          <p>
+            Curious about ingredients, finding us in a diner, or placing a
+            bigger order? We’re all ears.
+          </p>
+          <a class="button button-dark" href="contact.html"
+            >Talk to our team <span>↗</span></a
+          >
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-top">
+        <a class="wordmark footer-wordmark" href="index.html"
+          >sun<span>drops</span><sup>®</sup><i></i
+        ></a>
+        <p>Good things, in a bite.<br />Made for your own kind of day.</p>
+        <a
+          class="back-top"
+          href="#top"
+          onclick="
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            return false;
+          "
+          >BACK TO THE TOP ↑</a
+        >
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 SUNDROPS® — CONCEPT STORE.</span>
+        <div>
+          <a href="contact.html">Contact</a><a href="blog.html">Field notes</a
+          ><a href="https://www.instagram.com/" target="_blank" rel="noreferrer"
+            >Instagram ↗</a
+          ><a href="auth.html">Your account ↗</a>
+        </div>
+        <span>GOOD ENERGY ONLY.</span>
+      </div>
+    </footer>
+    <div class="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>
