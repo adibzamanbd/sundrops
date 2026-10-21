@@ -1,0 +1,21 @@
+:root {
+  --blue: #1239e8;
+  --blue-deep: #0924a9;
+  --blue-dark: #07164d;
+  --ice: #dbe8ff;
+  --pale: #f1f5ff;
+  --white: #f8f9ff;
+  --ink: #07164d;
+  --muted: #63709c;
+  --line: rgba(7, 22, 77, 0.18);
+  --display: "Space Grotesk", sans-serif;
+  --body: "Manrope", sans-serif;
+  --mono: "DM Mono", monospace;
+  --ease: cubic-bezier(0.22, 0.8, 0.22, 1);
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
