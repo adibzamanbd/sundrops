@@ -168,3 +168,159 @@ button {
   margin: 6px;
 }
 
+.section-pad {
+  padding-left: 8.1vw;
+  padding-right: 8.1vw;
+}
+.hero {
+  background: var(--blue);
+  color: white;
+  padding-top: 25px;
+  position: relative;
+  overflow: hidden;
+  min-height: 720px;
+}
+.hero:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0.13;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px);
+  background-size: 72px 72px;
+  mask-image: linear-gradient(90deg, black, transparent 88%);
+}
+.hero-topline,
+.hero-bottomline,
+.section-kicker {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  font: 9px var(--mono);
+  letter-spacing: 0.09em;
+  position: relative;
+  z-index: 2;
+}
+.eyebrow,
+.micro-label {
+  font: 10px var(--mono);
+  letter-spacing: 0.1em;
+}
+.status-dot {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #8dffbb;
+  margin-right: 8px;
+  box-shadow: 0 0 12px rgba(141, 255, 187, 0.8);
+}
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  min-height: 580px;
+  position: relative;
+  z-index: 2;
+}
+.hero-copy {
+  padding: 58px 0 34px;
+  position: relative;
+  z-index: 4;
+}
+.micro-label {
+  margin: 0 0 22px;
+  color: #b8c8ff;
+}
+.hero-title {
+  font: 700 clamp(68px, 9.4vw, 150px)/0.79 var(--display);
+  letter-spacing: -0.105em;
+  margin: 0 0 31px;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 2;
+}
+.hero-title > span {
+  display: block;
+}
+.hero-title .title-second {
+  margin-left: 8%;
+  color: #c4d5ff;
+}
+.title-period {
+  color: #82ffbb;
+}
+.hero-title .title-third {
+  font-size: 0.61em;
+  letter-spacing: -0.09em;
+  margin-top: 15px;
+}
+.hero-title em,
+.inner-title em,
+.product-heading em,
+.feature-copy h2 em,
+.team-heading em,
+.journal-heading em,
+.social-copy h2 em,
+.newsletter h2 em,
+.shop-help h2 em,
+.contact-info h2 em,
+.faq-section h2 em,
+.blog-cta h2 em,
+.auth-art-content h1 em,
+.auth-form h2 em {
+  font-style: normal;
+  color: #8bffbc;
+}
+.hero-description {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #d9e2ff;
+  max-width: 380px;
+  margin: 0 0 28px;
+}
+.hero-buttons {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  flex-wrap: wrap;
+}
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+  padding: 16px 19px;
+  border: 1px solid transparent;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+  transition:
+    transform 0.3s var(--ease),
+    background 0.3s,
+    color 0.3s;
+  min-height: 50px;
+}
+.button:hover {
+  transform: translateY(-3px);
+}
+.button span {
+  font-size: 17px;
+  font-weight: 400;
+}
+.button-dark {
+  background: var(--ink);
+  color: white;
+}
+.button-dark:hover {
+  background: #204bff;
+}
+.button-light {
+  background: var(--white);
+  color: var(--blue);
+}
+.button-light:hover {
+  background: #b7ffdb;
+}
