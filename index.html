@@ -297,6 +297,7 @@
           >
         </div>
       </section>
+      
       <section class="team-section section-pad">
         <div class="section-kicker">
           <span>03 — THE PEOPLE</span><span>GOOD THINGS TAKE A TEAM</span>
@@ -571,6 +572,58 @@
           </div>
         </div>
       </section>
+      <section class="newsletter section-pad">
+        <div>
+          <span class="eyebrow">THE GOOD STUFF, OCCASIONALLY</span>
+          <h2>GOOD NEWS.<br /><em>NO SPAM.</em></h2>
+        </div>
+        <form class="newsletter-form" id="newsletter-form">
+          <label for="newsletter-email"
+            >A little sunshine straight to your inbox.</label
+          >
+          <div class="email-field">
+            <input
+              id="newsletter-email"
+              type="email"
+              placeholder="Your email address"
+              required
+            /><button type="submit" aria-label="Subscribe">↗</button>
+          </div>
+          <p>
+            By subscribing, you agree to receive Sundrops updates. Unsubscribe
+            anytime.
+          </p>
+          <span class="form-message" aria-live="polite"></span>
+        </form>
+      </section>
     </main>
+    <footer class="site-footer">
+      <div class="footer-top">
+        <a class="wordmark footer-wordmark" href="index.html"
+          >sun<span>drops</span><sup>®</sup><i></i
+        ></a>
+        <p>Good things, in a bite.<br />Made for your own kind of day.</p>
+        <a
+          class="back-top"
+          href="#top"
+          onclick="
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            return false;
+          "
+          >BACK TO THE TOP ↑</a
+        >
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 SUNDROPS® — MADE WITH A LITTLE EXTRA CARE.</span>
+        <div>
+          <a href="contact.html">Contact</a><a href="blog.html">Field notes</a
+          ><a href="https://www.instagram.com/" target="_blank" rel="noreferrer"
+            >Instagram ↗</a
+          ><a href="auth.html">Your account ↗</a>
+        </div>
+        <span>GOOD ENERGY ONLY.</span>
+      </div>
+    </footer>
+    <div class="toast" role="status" aria-live="polite"></div>
   </body>
 </html>
