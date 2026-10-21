@@ -461,8 +461,6 @@ button {
   font-size: 14px;
 }
 
-
-
 .ticker {
   background: #8bffbc;
   color: var(--blue);
@@ -831,4 +829,125 @@ button {
 .center-link {
   text-align: center;
   margin-top: 39px;
+}
+.feature-band {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 650px;
+  background: var(--blue);
+  color: white;
+}
+.feature-art {
+  position: relative;
+  overflow: hidden;
+  min-height: 620px;
+  background: #0e31c8;
+}
+.feature-grid-lines {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(#ffffff1b 1px, transparent 1px),
+    linear-gradient(90deg, #ffffff1b 1px, transparent 1px);
+  background-size: 45px 45px;
+  mask-image: linear-gradient(black, transparent 100%);
+}
+.feature-big-type {
+  position: absolute;
+  top: 11%;
+  left: 12%;
+  font: 700 clamp(68px, 9vw, 132px)/0.75 var(--display);
+  letter-spacing: -0.11em;
+  color: #8bffbc;
+  z-index: 2;
+}
+.feature-big-type span {
+  position: absolute;
+  font-size: 44px;
+  right: -43px;
+  top: 0;
+  animation: spin 24s linear infinite;
+}
+.feature-planet {
+  position: absolute;
+  width: 57%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  right: -5%;
+  bottom: -8%;
+  background: radial-gradient(
+    circle at 29% 22%,
+    #dbe8ff 0%,
+    #8fb2ff 18%,
+    #4669ee 40%,
+    #1239e8 62%,
+    #07164d 80%
+  );
+  box-shadow:
+    inset -35px -40px 65px #07164d9c,
+    0 0 0 1px #ffffff40;
+}
+.feature-planet:before {
+  content: "";
+  position: absolute;
+  inset: 19% -35%;
+  border: 2px solid #8bffbc;
+  border-radius: 50%;
+  transform: rotate(-25deg) scaleY(0.3);
+}
+.feature-side-note {
+  position: absolute;
+  bottom: 35px;
+  left: 35px;
+  font: 8px var(--mono);
+  letter-spacing: 0.1em;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+.feature-copy {
+  padding: 95px 8vw 85px 7vw;
+  align-self: center;
+}
+.feature-copy h2 {
+  font: 700 clamp(48px, 6vw, 80px)/0.9 var(--display);
+  letter-spacing: -0.08em;
+  margin: 28px 0 24px;
+}
+.feature-copy h2 em {
+  color: #8bffbc;
+}
+.feature-copy > p {
+  color: #d3ddff;
+  max-width: 400px;
+}
+.feature-points {
+  margin: 35px 0 15px;
+  border-top: 1px solid #ffffff4a;
+}
+.feature-points > div {
+  display: flex;
+  gap: 20px;
+  padding: 16px 0;
+  border-bottom: 1px solid #ffffff4a;
+}
+.feature-points > div > span {
+  font: 10px var(--mono);
+  color: #8bffbc;
+}
+.feature-points p {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.feature-points b {
+  font-size: 12px;
+}
+.feature-points small {
+  font-size: 10px;
+  color: #c4d1ff;
+}
+.feature-copy .underlined-link {
+  color: #8bffbc;
+  border-color: #8bffbc;
 }
