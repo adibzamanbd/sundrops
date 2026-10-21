@@ -1253,3 +1253,166 @@ button {
 .journal-card:hover h3 {
   color: var(--blue);
 }
+
+.social-section {
+  background: var(--blue);
+  color: white;
+  padding: 100px 8.1vw;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 7vw;
+  overflow: hidden;
+}
+.social-copy {
+  align-self: center;
+}
+.social-copy h2 {
+  font-size: clamp(51px, 6.8vw, 92px);
+  margin: 27px 0 24px;
+}
+.social-copy h2 em {
+  color: #8bffbc;
+}
+.social-copy > p {
+  font-size: 13px;
+  line-height: 1.8;
+  color: #d2dcff;
+  max-width: 340px;
+  margin-bottom: 28px;
+}
+.social-art {
+  height: 410px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 12px;
+  transform: rotate(4deg) scale(1.03);
+}
+.social-tile {
+  position: relative;
+  overflow: hidden;
+  padding: 19px;
+  font: 700 22px/0.9 var(--display);
+  letter-spacing: -0.05em;
+}
+.tile-a {
+  background: #8bffbc;
+  color: var(--blue);
+  font-size: 29px;
+}
+.tile-a span {
+  position: absolute;
+  right: 14px;
+  bottom: 10px;
+  font-size: 35px;
+}
+.tile-b {
+  background: #dbe8ff;
+  color: var(--blue);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.tile-b > span {
+  font: 8px var(--mono);
+  letter-spacing: 0.1em;
+}
+.tile-b > b {
+  font-size: 29px;
+}
+.tile-b > i {
+  font: italic 13px var(--display);
+  align-self: flex-end;
+}
+.tile-c {
+  background: #2148f3;
+}
+.tile-c-orb {
+  position: absolute;
+  width: 145px;
+  height: 145px;
+  right: -15px;
+  top: -30px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at 25% 25%,
+    #fff,
+    #8ab1ff 25%,
+    #4968ef 55%,
+    #091f9b
+  );
+  box-shadow: inset -20px -20px 30px #07164d88;
+}
+.tile-c > span {
+  position: absolute;
+  bottom: 17px;
+  left: 18px;
+  font-size: 17px;
+}
+.tile-d {
+  background: #a9baff;
+  color: var(--blue);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.tile-d {
+  font: 8px var(--mono);
+  letter-spacing: 0.1em;
+}
+.tile-d b {
+  font: 700 21px/0.95 var(--display);
+  letter-spacing: -0.04em;
+}
+.newsletter {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: grid;
+  grid-template-columns: 1fr 0.8fr;
+  gap: 7vw;
+  align-items: center;
+}
+.newsletter h2 {
+  font-size: clamp(48px, 6vw, 80px);
+  margin-top: 22px;
+}
+.newsletter-form label {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+.email-field {
+  display: flex;
+  border-bottom: 1px solid var(--ink);
+}
+.email-field input {
+  flex: 1;
+  min-width: 0;
+  padding: 15px 0;
+  border: 0;
+  outline: none;
+  background: transparent;
+  font-size: 12px;
+}
+.email-field button {
+  background: transparent;
+  border: 0;
+  color: var(--blue);
+  font-size: 25px;
+  padding: 0 5px;
+}
+.newsletter-form > p,
+.form-legal {
+  font-size: 9px;
+  color: #7c86a4;
+  line-height: 1.7;
+  margin-top: 12px;
+}
+.form-message {
+  display: block;
+  font-size: 11px;
+  line-height: 1.5;
+  margin-top: 12px;
+  color: var(--blue);
+  min-height: 16px;
+}
