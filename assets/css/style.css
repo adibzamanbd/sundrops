@@ -19,7 +19,6 @@
 html {
   scroll-behavior: smooth;
 }
-
 body {
   margin: 0;
   background: var(--white);
@@ -167,7 +166,6 @@ button {
   background: var(--ink);
   margin: 6px;
 }
-
 .section-pad {
   padding-left: 8.1vw;
   padding-right: 8.1vw;
@@ -323,4 +321,275 @@ button {
 }
 .button-light:hover {
   background: #b7ffdb;
+}
+.button-outline {
+  border-color: var(--line);
+  background: transparent;
+  color: var(--ink);
+}
+.button-outline:hover {
+  background: var(--blue);
+  border-color: var(--blue);
+  color: white;
+}
+.text-link {
+  font-size: 11px;
+  color: white;
+}
+.text-link span {
+  margin-left: 8px;
+}
+.hero-footnote {
+  display: flex;
+  gap: 27px;
+  font: 9px var(--mono);
+  letter-spacing: 0.08em;
+  color: #bdccff;
+  margin-top: 72px;
+}
+.hero-art {
+  height: 540px;
+  position: relative;
+  overflow: visible;
+  isolation: isolate;
+}
+.hero-art:before {
+  content: "";
+  position: absolute;
+  inset: 8% 1% 5% -6%;
+  background: radial-gradient(ellipse, rgba(7, 22, 77, 0.2), transparent 65%);
+}
+#hero-canvas {
+  position: absolute;
+  width: 118%;
+  height: 116%;
+  left: -9%;
+  top: -7%;
+  z-index: 3;
+  display: block;
+  outline: none;
+}
+.art-ring {
+  position: absolute;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  aspect-ratio: 1;
+  z-index: 1;
+}
+.ring-one {
+  width: 91%;
+  top: 4%;
+  left: 4%;
+  transform: rotate(-18deg) scaleY(0.68);
+}
+.ring-two {
+  width: 72%;
+  top: 14%;
+  left: 13%;
+  transform: rotate(38deg) scaleY(0.7);
+  border-style: dashed;
+  animation: orbit 42s linear infinite;
+}
+.orbit-label {
+  position: absolute;
+  font: 9px var(--mono);
+  letter-spacing: 0.1em;
+  z-index: 5;
+  color: #d7e0ff;
+}
+.orbit-label span {
+  color: #8bffbc;
+  margin-left: 6px;
+}
+.orbit-label-top {
+  top: 9%;
+  left: 3%;
+}
+.orbit-label-bottom {
+  bottom: 9%;
+  right: 0;
+}
+.art-sticker {
+  position: absolute;
+  z-index: 6;
+  right: 3%;
+  top: 35%;
+  background: #8bffbc;
+  color: var(--blue);
+  width: 88px;
+  height: 88px;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  border-radius: 50%;
+  font: 800 11px/1.1 var(--display);
+  transform: rotate(11deg);
+  box-shadow: 0 10px 35px #07164d44;
+}
+.art-sticker span {
+  font-size: 18px;
+  position: absolute;
+  top: -8px;
+  right: 2px;
+}
+.hero-spark {
+  position: absolute;
+  color: #a7ffce;
+  font-size: 28px;
+  z-index: 5;
+}
+.spark-a {
+  top: 20%;
+  right: 12%;
+  animation: spin 12s linear infinite;
+}
+.spark-b {
+  bottom: 21%;
+  left: 7%;
+  font-size: 18px;
+}
+.hero-bottomline {
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  padding: 19px 0 20px;
+  color: #bdccff;
+  font-size: 8px;
+}
+.scroll-cue i {
+  font-style: normal;
+  color: #8bffbc;
+  margin-left: 9px;
+  font-size: 14px;
+}
+
+
+
+.ticker {
+  background: #8bffbc;
+  color: var(--blue);
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 17px 0;
+  transform: rotate(-1deg) scale(1.02);
+  position: relative;
+  z-index: 4;
+  margin: 0 0 0;
+}
+.ticker-track {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 38px;
+  min-width: max-content;
+  font: 700 12px var(--display);
+  letter-spacing: 0.06em;
+  animation: marquee 28s linear infinite;
+}
+.ticker-track b {
+  font-size: 20px;
+  font-weight: 400;
+}
+.manifesto {
+  padding-top: 126px;
+  padding-bottom: 135px;
+}
+.section-kicker {
+  color: var(--muted);
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 17px;
+  font-size: 9px;
+}
+.manifesto-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 7vw;
+  padding-top: 65px;
+}
+.manifesto-title,
+.product-heading h2,
+.team-heading h2,
+.journal-heading h2,
+.social-copy h2,
+.newsletter h2,
+.shop-help h2,
+.contact-info h2,
+.faq-section h2,
+.blog-cta h2 {
+  font: 700 clamp(48px, 7.2vw, 104px)/0.87 var(--display);
+  letter-spacing: -0.085em;
+  margin: 0;
+}
+.manifesto-title span {
+  color: var(--blue);
+}
+.manifesto-content {
+  padding-top: 4px;
+  position: relative;
+}
+.manifesto-orb {
+  height: 155px;
+  width: 155px;
+  border-radius: 50%;
+  background: var(--blue);
+  color: #8bffbc;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  margin: 0 0 44px 18%;
+  position: relative;
+  box-shadow:
+    inset -15px -20px 40px #07164d55,
+    0 24px 60px #1239e81e;
+}
+.manifesto-orb:before,
+.manifesto-orb:after {
+  content: "";
+  position: absolute;
+  inset: -16px;
+  border: 1px solid #1239e84c;
+  border-radius: 50%;
+  transform: rotate(33deg) scaleY(0.45);
+}
+.manifesto-orb:after {
+  inset: -29px;
+  transform: rotate(-35deg) scaleY(0.45);
+  border-style: dashed;
+}
+.manifesto-orb > span {
+  font-size: 27px;
+}
+.orb-caption {
+  font: 8px var(--mono);
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+  color: white;
+  margin-top: 8px;
+}
+.large-copy {
+  font: 500 clamp(21px, 2.3vw, 31px)/1.3 var(--display);
+  letter-spacing: -0.04em;
+  max-width: 440px;
+}
+.body-copy,
+.feature-copy > p,
+.contact-info > p,
+.blog-feature-copy > p,
+.shop-help > div:nth-child(2) > p {
+  font-size: 13px;
+  line-height: 1.9;
+  color: #5c688f;
+  max-width: 440px;
+}
+.underlined-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 28px;
+  padding: 0 0 9px;
+  border-bottom: 1px solid var(--blue);
+  font-size: 11px;
+  font-weight: 800;
+  margin-top: 20px;
+  color: var(--blue);
+}
+.underlined-link span {
+  font-size: 16px;
 }

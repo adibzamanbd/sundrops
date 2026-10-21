@@ -27,7 +27,7 @@
     toast.timer = setTimeout(() => el.classList.remove("show"), 2800);
   };
 
-  // Logo-only loader:
+  // Logo-only loader: never shorter than 3s, never longer than 5s.
   function initSundropsLoader() {
     if (document.querySelector(".sd-loader")) return;
     const loader = document.createElement("div");
